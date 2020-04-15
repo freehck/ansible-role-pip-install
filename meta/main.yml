@@ -33,7 +33,6 @@ dependencies:
   - role: freehck.pkg_install
     vars:
       pkg_install_packages:
-        - python-pip
         - python3-pip
     when:
       - ansible_distribution in [ 'Ubuntu', 'Debian' ]
