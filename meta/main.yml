@@ -35,4 +35,4 @@ dependencies:
       pkg_install_packages:
         - python3-pip
     when:
-      - ansible_distribution in [ 'Ubuntu', 'Debian' ]
+      - ansible_distribution | default('none') in [ 'Ubuntu', 'Debian' ]
